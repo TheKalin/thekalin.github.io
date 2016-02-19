@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ORTC Sample</title>
+</head>
+<body>
+
+<div id="content">
+<h1>Your IP/S:</h1>
+</div>
+<script>
+  if(window.RTCIceGatherer){
+    var iceOptions = { "gatherPolicy": "all", "iceServers": [] };
+var gatherer1 = new RTCIceGatherer(iceOptions);
+gatherer1.onlocalcandidate = function (evt) {
+    console.log(evt.candidate.ip);
+    if(evt.candidate.ip!= undefined){
+      var p= document.createElement('p');
+      p.innerHTML=evt.candidate.ip;
+      document.getElementById('content').appendChild(p);
+    }
+};
+  }else{
+  document.getElementById('content').innerHTML = "Not Edge or ORTC is disabled";
+  }
+</script>
+</body>
+</html>

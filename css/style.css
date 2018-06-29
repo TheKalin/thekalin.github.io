@@ -165,7 +165,7 @@ span.t-position {
     transition: all 0.5s;
     -webkit-font-smoothing: antialiased;
 }
-.t-social2 .fa {
+.t-social2 .fab {
     display: inline-block;
     padding: 6px;
     color: #ffffff;
@@ -174,7 +174,28 @@ span.t-position {
     border: 1.5px solid transparent;
     border-radius: 5px;
 }
-.t-social2 .fa:hover {
+.t-social2 .fab:hover {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-font-smoothing: antialiased;
+}
+
+.t-social2 .fas {
+    display: inline-block;
+    padding: 6px;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+}
+.t-social2 .fas:hover {
     padding: 6px;
     width: 30px;
     height: 30px;
